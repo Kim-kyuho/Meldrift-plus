@@ -70,7 +70,7 @@
     "@tiptap/extension-highlight": "^3.31.3",
     "@tiptap/react": "^3.31.3",
     "@tiptap/starter-kit": "^3.31.3",
-    "lucide-react": "^1.11.0",
+    "lucide-react": "^1.49.0",
     "mermaid": "^11.17.2",
     "react-markdown": "^10.1.0",
     "react-rnd": "^10.5.3",
