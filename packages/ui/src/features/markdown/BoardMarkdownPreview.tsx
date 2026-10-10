@@ -8,6 +8,7 @@ import remarkGfm from "remark-gfm";
 import { createPortal } from "react-dom";
 import PressableButton from "../../shared/PressableButton";
 import { useMermaidRenderer } from "../mermaid/useMermaidRenderer";
+import { splitMermaidSections } from "./mermaid-sections";
 
 type BoardMarkdownPreviewProps = {
     markdown: string;
@@ -56,7 +57,7 @@ export default function BoardMarkdownPreview({
     onDownload,
     onClose,
 }: BoardMarkdownPreviewProps) {
-    const markdownSections = markdown.split(/```mermaid\s*\r?\n([\s\S]*?)```/g);
+    const markdownSections = splitMermaidSections(markdown);
 
     return createPortal(
         <>
