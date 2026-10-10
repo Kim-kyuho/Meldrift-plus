@@ -31,7 +31,7 @@
     "@meldrift/core": "*",
     "@meldrift/ui": "*",
     "@mermaid-js/mermaid-zenuml": "^0.2.3",
-    "@neondatabase/serverless": "^1.1.0",
+    "@neondatabase/serverless": "^1.2.0",
     "@tanstack/react-table": "^8.21.3",
     "@tiptap/extension-hard-break": "^3.31.4",
     "@tiptap/extension-highlight": "^3.31.4",
