@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ChangeEvent } from "react";
-import { createEmptyBoardSnapshot, reissueSyncIds, type BoardSnapshot } from "@meldrift/board/board-state";
+import { createEmptyBoardSnapshot, reissueSyncIds, type BoardSnapshot } from "@meldrift/board-data/board-state";
 import { maxSnapshotBytes } from "@/lib/snapshot";
 
 export type BoardFileActions = {

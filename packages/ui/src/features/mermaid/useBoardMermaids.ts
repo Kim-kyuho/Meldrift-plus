@@ -1,7 +1,7 @@
 import { RefObject, useState } from "react";
-import { createSyncId, nextPositiveId, type BoardMermaid } from "@meldrift/board/board-state";
+import { createSyncId, nextPositiveId, type BoardMermaid } from "@meldrift/board-data/board-state";
 
-export type { BoardMermaid } from "@meldrift/board/board-state";
+export type { BoardMermaid } from "@meldrift/board-data/board-state";
 
 type UseBoardMermaidsOptions = {
     initialMermaids: BoardMermaid[];

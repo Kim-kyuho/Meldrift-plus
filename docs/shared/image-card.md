@@ -1,8 +1,8 @@
 # ImageCard 상세설계
 
-소스: `packages/board/src/components/ImageCard.tsx`, `packages/board/src/hooks/useImageCard.ts`, `packages/board/src/hooks/useBoardImages.ts`
+소스: `packages/ui/src/features/image/ImageCard.tsx`, `packages/ui/src/features/image/useImageCard.ts`, `packages/ui/src/features/image/useBoardImages.ts`
 
-이미지 카드는 다른 카드와 달리 `@meldrift/ui`가 아니라 `@meldrift/board`에 있다. 바이트·MIME·object URL을 다루느라 `board-state`와 `image-file`에 묶여 있기 때문이다. 툴바(`ImageToolBar`)와 확인 대화상자(`ConfirmDialog`)만 `@meldrift/ui`에서 가져온다.
+이미지 카드와 편집 훅은 `@meldrift/ui`에 있다. `ImageCard`는 편집과 object URL 처리를 연결하고, `ImageCardView`는 카드 프레임·툴바를 표시한다. 데이터 타입과 이미지 변환은 `@meldrift/board-data`에서 가져온다.
 
 카드가 들고 있는 데이터는 `data: Uint8Array | null`, `mimeType`, `url`, `label`이다. `next/image`를 쓰지 않고 원시 `<img>`에 object URL을 넣는다.
 

@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 import { and, eq, sql } from "drizzle-orm";
 import { NextRequest, NextResponse } from "next/server";
-import { assetChunkBytes } from "@meldrift/board/board-delta";
+import { assetChunkBytes } from "@meldrift/board-data/board-delta";
 import { getDb } from "@/lib/db";
 import { db_uploadSessions } from "@/lib/db/schema";
 import { editorFromRequest, editorSessionGuard } from "@/lib/editor-guard";

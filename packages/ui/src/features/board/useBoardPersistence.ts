@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import type { BoardSnapshot } from "../board-state";
+import type { BoardSnapshot } from "@meldrift/board-data/board-state";
 
 const localSaveDelayMs = 150;
 

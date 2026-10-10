@@ -1,6 +1,6 @@
 # 로컬 이미지 처리 상세설계
 
-소스: `packages/board/src/image-file.ts`
+소스: `packages/board-data/src/image-file.ts`
 
 ## 목적
 

@@ -1,6 +1,6 @@
 import { act, renderHook } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
-import { useBoardSelection } from "@meldrift/board/useBoardSelection";
+import { useBoardSelection } from "@meldrift/ui/useBoardSelection";
 import type { BoardImage, BoardMemo, BoardMermaid, BoardTable } from "@/lib/board-state";
 
 const memo = (id: number, x: number, y: number): BoardMemo => ({ id, syncId: `memo-${id}`, boardId: 1, content: "memo", x, y, z: id, width: 100, height: 100, color: "#fff", sortOrder: id });

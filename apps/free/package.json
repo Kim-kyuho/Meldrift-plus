@@ -21,7 +21,7 @@
     "test:e2e:install": "playwright install"
   },
   "dependencies": {
-    "@meldrift/board": "*",
+    "@meldrift/board-data": "*",
     "@meldrift/ai": "*",
     "@meldrift/core": "*",
     "@meldrift/ui": "*",

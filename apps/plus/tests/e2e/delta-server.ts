@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { expect, type BrowserContext } from "@playwright/test";
-import type { BoardOperation } from "@meldrift/board/board-delta";
+import type { BoardOperation } from "@meldrift/board-data/board-delta";
 
 type Change = { mutationId: string; baseRevision: number; operations: BoardOperation[] };
 type Asset = {

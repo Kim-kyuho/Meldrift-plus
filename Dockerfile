@@ -10,7 +10,7 @@ COPY apps/plus/package.json ./apps/plus/package.json
 COPY packages/ai/package.json ./packages/ai/package.json
 COPY packages/core/package.json ./packages/core/package.json
 COPY packages/ui/package.json ./packages/ui/package.json
-COPY packages/board/package.json ./packages/board/package.json
+COPY packages/board-data/package.json ./packages/board-data/package.json
 RUN npm ci
 
 COPY . .

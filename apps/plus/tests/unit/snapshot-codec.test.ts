@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import initSqlJs from "sql.js/dist/sql-asm.js";
-import { schemaSql } from "@meldrift/board/sqlite-codec";
+import { schemaSql } from "@meldrift/board-data/sqlite-codec";
 import { decodeSnapshot } from "@/lib/snapshot-codec";
 
 async function fixture() {

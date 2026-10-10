@@ -1,7 +1,7 @@
 import { z } from "zod";
 import type { MemoCardData, MermaidCardData, TableCardData } from "@meldrift/core/cards";
 import { boardStrokesSchema, createStrokeId, type BoardStroke } from "@meldrift/core/board-stroke";
-import { maxStoredImageBytes, supportedImageMimeTypes } from "@meldrift/board/image-file";
+import { maxStoredImageBytes, supportedImageMimeTypes } from "@meldrift/board-data/image-file";
 import { tableSourceSchema } from "@meldrift/core/table-card";
 
 export const defaultBoardId = 1;

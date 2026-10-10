@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { PgDialect } from "drizzle-orm/pg-core";
 import type { SQL } from "drizzle-orm";
 import { TransitionError, transitionBoard } from "@/lib/board-transition";
-import { createEmptyBoardSnapshot, type BoardSnapshot } from "@meldrift/board/board-state";
+import { createEmptyBoardSnapshot, type BoardSnapshot } from "@meldrift/board-data/board-state";
 
 const mocks = vi.hoisted(() => ({
     execute: vi.fn(), limit: vi.fn(), batch: vi.fn(), values: vi.fn(),

@@ -8,7 +8,7 @@ import {
     useRef,
     useState,
 } from "react";
-import type { BoardMemo } from "@meldrift/board/board-state";
+import type { BoardMemo } from "@meldrift/board-data/board-state";
 import { memoReorderRowHeight, reorderMemos, sortMemosByOrder } from "@meldrift/core/memo-order";
 
 type UseMemoReorderOptions = {

@@ -1,5 +1,5 @@
 import { sql, type SQL } from "drizzle-orm";
-import { boardOperationFields, type BoardOperation, type BoardOperationType } from "@meldrift/board/board-delta";
+import { boardOperationFields, type BoardOperation, type BoardOperationType } from "@meldrift/board-data/board-delta";
 import { editorSessionGuard, type EditorIdentity } from "./editor-guard";
 import type { ChangeRequest } from "./sync-operations";
 

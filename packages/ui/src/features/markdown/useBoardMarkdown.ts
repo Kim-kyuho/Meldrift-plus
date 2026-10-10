@@ -3,12 +3,12 @@ import { strToU8, zipSync } from "fflate";
 import {
     compileBoardMarkdownDocument,
     type BoardMarkdownDocument,
-} from "@meldrift/board/board-markdown";
-import type { BoardSnapshot } from "@meldrift/board/board-state";
+} from "@meldrift/board-data/board-markdown";
+import type { BoardSnapshot } from "@meldrift/board-data/board-state";
 import {
     imageBytesToBlob,
     imageBytesToPng,
-} from "@meldrift/board/image-file";
+} from "@meldrift/board-data/image-file";
 
 type PreviewImageState = {
     document: BoardMarkdownDocument;

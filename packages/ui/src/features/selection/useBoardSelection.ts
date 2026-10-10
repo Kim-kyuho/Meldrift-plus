@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useState } from "react";
 import type { CardType, SelectedCard, SelectionOffset, SelectionRect } from "@meldrift/core/cards";
-import type { BoardImage, BoardMemo, BoardMermaid, BoardTable } from "@meldrift/board/board-state";
+import type { BoardImage, BoardMemo, BoardMermaid, BoardTable } from "@meldrift/board-data/board-state";
 
 type UseBoardSelectionOptions = {
     boardWidth: number;

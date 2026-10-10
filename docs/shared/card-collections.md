@@ -1,6 +1,6 @@
 # 카드 컬렉션 훅 상세설계
 
-소스: `packages/board/src/hooks/useBoardMemos.ts`, `packages/board/src/hooks/useBoardImages.ts`, `packages/board/src/hooks/useBoardMermaids.ts`, `packages/board/src/hooks/useBoardTables.ts`, `packages/board/src/hooks/useCardLayer.ts`
+소스: `packages/ui/src/features/memo/useBoardMemos.ts`, `packages/ui/src/features/image/useBoardImages.ts`, `packages/ui/src/features/mermaid/useBoardMermaids.ts`, `packages/ui/src/features/table/useBoardTables.ts`, `packages/ui/src/features/board/useCardLayer.ts`
 
 ## 두 Edition이 같은 훅을 쓴다
 

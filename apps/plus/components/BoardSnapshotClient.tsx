@@ -1,6 +1,6 @@
 "use client";
 
-import type { BoardInfo } from "@meldrift/board/board-state";
+import type { BoardInfo } from "@meldrift/board-data/board-state";
 import { useBoardSnapshot } from "@/hooks/useBoardSnapshot";
 import BoardClient from "./BoardClient";
 

@@ -48,7 +48,7 @@ flowchart TD
     ListPage[Server: app/page.tsx]
     BoardPage["Server: app/boards/[boardId]/page.tsx"]
     BoardList[Client: BoardList]
-    BoardClient["Client: BoardClient (@meldrift/board)"]
+    BoardClient["Client: BoardClient (@meldrift/ui)"]
     Worker[Web Worker: SQLite WASM]
     IDB[(IndexedDB)]
     Sync[SnapshotSync]
@@ -67,7 +67,7 @@ flowchart TD
 
 보드 내용은 브라우저 SQLite가 1차 저장소다. 서버 컴포넌트는 보드 메타데이터만 조회하고, 카드는 클라이언트가 스냅샷으로 받는다.
 
-Plus는 그 스냅샷 파일을 통째로 `board_snapshots`에 올린다. Free는 브라우저를 떠나지 않는다. 두 Edition의 보드 화면은 `@meldrift/board`의 같은 코드다.
+Plus는 그 스냅샷 파일을 통째로 `board_snapshots`에 올린다. Free는 브라우저를 떠나지 않는다. 두 Edition의 보드 화면은 `@meldrift/ui`의 같은 코드다.
 
 ## 4. 화면 진입
 
@@ -111,7 +111,7 @@ BoardClient
 └── DrawingLayer / DrawingToolBar
 ```
 
-`BoardClient`는 `@meldrift/board`에 있고 두 Edition이 같은 파일을 쓴다. 컬렉션, 현재 편집 ID, 줌, 보드 스크롤, 검색, 탐색, 레이어 변경과 드로잉 모드를 연결한다. 카드 내부 초안과 포인터 처리는 각 카드 훅이 담당한다.
+`BoardClient`는 `@meldrift/ui`에 있고 두 Edition이 같은 파일을 쓴다. 컬렉션, 현재 편집 ID, 줌, 보드 스크롤, 검색, 탐색, 레이어 변경과 드로잉 모드를 연결한다. 카드 내부 초안과 포인터 처리는 각 카드 훅이 담당한다.
 
 Edition이 다른 부분은 `renderControls` 콜백 하나로 뺐다. Free는 거기에 보드 메뉴·Help·반출입·자동 저장을, Plus는 보드 메뉴·인증 모달·스냅샷 전달을 그린다. 자세한 계약은 [shared/board-client.md](./shared/board-client.md)에 있다.
 
@@ -490,7 +490,7 @@ Markdown 컴파일이 메모 꼭짓점 포함 여부로 카드를 고르므로 �
 
 현재 스키마는 카드·드로잉의 `board_id`에 외래키를 두지 않는다. 보드 삭제 API가 Cloudinary 자산을 먼저 지우고, `boards`·`board_snapshots`와 카드 테이블 삭제를 `db.batch` 한 번으로 보낸다.
 
-브라우저 SQLite는 같은 테이블 구성을 쓰되 `users`가 없고 이미지가 URL 대신 BLOB을 가진다. 두 스키마는 `@meldrift/board`의 `sqlite-codec.ts`와 `lib/db/schema.ts`에 각각 있다.
+브라우저 SQLite는 같은 테이블 구성을 쓰되 `users`가 없고 이미지가 URL 대신 BLOB을 가진다. 두 스키마는 `@meldrift/board-data`의 `sqlite-codec.ts`와 `lib/db/schema.ts`에 각각 있다.
 
 ## 19. API 목록
 

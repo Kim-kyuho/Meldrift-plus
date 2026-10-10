@@ -5,7 +5,7 @@ import {
     type CardLayerAction,
     type CardType,
 } from "@meldrift/core/cards";
-import type { BoardImage, BoardMemo, BoardMermaid, BoardTable } from "@meldrift/board/board-state";
+import type { BoardImage, BoardMemo, BoardMermaid, BoardTable } from "@meldrift/board-data/board-state";
 
 export type CardLayerType = CardType;
 export type { CardLayerAction };

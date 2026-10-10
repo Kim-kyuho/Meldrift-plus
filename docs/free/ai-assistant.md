@@ -1,6 +1,6 @@
 # AI 어시스턴트 상세설계 (Free)
 
-소스: `lib/ai/assistant.ts`, `lib/ai/meldrift-guide.ts`, `app/api/ai/chat/route.ts`, `packages/board/src/hooks/useAiAssistant.ts`, `packages/ui/src/features/ai/AiChatPanel.tsx`, `packages/ui/src/features/ai/AiUnlockPanel.tsx`
+소스: `lib/ai/assistant.ts`, `lib/ai/meldrift-guide.ts`, `app/api/ai/chat/route.ts`, `packages/ui/src/features/ai/useAiAssistant.ts`, `packages/ui/src/features/ai/AiChatPanel.tsx`, `packages/ui/src/features/ai/AiUnlockPanel.tsx`
 
 어시스턴트 본체 — 도구 정의, Gemini 호출, 모델 폴백, 프롬프트 뼈대 — 는 `@meldrift/ai/assistant`가 가진다. 보드 계획 계산은 `packages/core/src/board-plan.ts`다. 잠금 자체는 [AI 잠금 상세설계](./ai-unlock.md)에 있다. 아래는 Free만 다른 부분이다.
 

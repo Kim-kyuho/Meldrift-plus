@@ -36,7 +36,7 @@ React도 DOM도 쓰지 않는다. 그래서 브라우저 컴포넌트와 서버 
 | `MermaidCardData` | `source` |
 | `TableCardData` | `source: TableSource` |
 
-이미지 카드는 없다. 바이트와 MIME을 들고 다녀야 해서 `@meldrift/board`의 `board-state.ts`가 `BoardImage`로 따로 정의한다.
+이미지 카드는 없다. 바이트와 MIME을 들고 다녀야 해서 `@meldrift/board-data`의 `board-state.ts`가 `BoardImage`로 따로 정의한다.
 
 ## `memo-order.ts` — 메모 순서
 

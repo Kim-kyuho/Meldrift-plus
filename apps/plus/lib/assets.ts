@@ -3,8 +3,8 @@ import { and, eq } from "drizzle-orm";
 import type { NeonHttpDatabase } from "drizzle-orm/neon-http";
 import { sql } from "drizzle-orm";
 import { db_assetChunks, db_assets } from "@/lib/db/schema";
-import { assetChunkBytes, maxStagedChangeBytes, stagedChangeMimeType } from "@meldrift/board/board-delta";
-import { maxStoredImageBytes, supportedImageMimeTypes } from "@meldrift/board/image-file";
+import { assetChunkBytes, maxStagedChangeBytes, stagedChangeMimeType } from "@meldrift/board-data/board-delta";
+import { maxStoredImageBytes, supportedImageMimeTypes } from "@meldrift/board-data/image-file";
 
 export { stagedChangeMimeType };
 

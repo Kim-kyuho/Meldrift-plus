@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 import { z } from "zod";
 import { tableSourceSchema } from "@meldrift/core/table-card";
-import { boardOperationFields, maxOperationsPerRequest, type BoardOperation, type BoardOperationType } from "@meldrift/board/board-delta";
+import { boardOperationFields, maxOperationsPerRequest, type BoardOperation, type BoardOperationType } from "@meldrift/board-data/board-delta";
 
 export { maxOperationsPerRequest };
 

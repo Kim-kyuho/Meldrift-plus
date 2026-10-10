@@ -1,0 +1,29 @@
+{
+  "name": "@meldrift/board-data",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./board-state": "./src/board-state.ts",
+    "./image-file": "./src/image-file.ts",
+    "./board-markdown": "./src/board-markdown.ts",
+    "./browser-db/client": "./src/browser-db/client.ts",
+    "./browser-db/protocol": "./src/browser-db/protocol.ts",
+    "./sqlite-codec": "./src/sqlite-codec.ts",
+    "./board-delta": "./src/board-delta.ts"
+  },
+  "dependencies": {
+    "@meldrift/core": "*",
+    "@sqlite.org/sqlite-wasm": "3.50.4-build1",
+    "turndown": "^7.2.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/turndown": "^5.0.6",
+    "vitest": "^4.1.9"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  }
+}

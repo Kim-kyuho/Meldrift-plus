@@ -2,7 +2,7 @@ import { act, renderHook } from "@testing-library/react";
 import type { ChangeEvent } from "react";
 import { describe, expect, it, vi } from "vitest";
 import { useBoardTransfer } from "@/hooks/useBoardTransfer";
-import { createEmptyBoardSnapshot } from "@meldrift/board/board-state";
+import { createEmptyBoardSnapshot } from "@meldrift/board-data/board-state";
 
 function setupOptions() {
     return {

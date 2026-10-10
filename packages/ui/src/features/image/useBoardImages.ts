@@ -1,8 +1,8 @@
 import { ChangeEvent, RefObject, useRef, useState } from "react";
-import { createAssetId, createSyncId, nextPositiveId, type BoardImage } from "@meldrift/board/board-state";
-import { prepareImageFile } from "@meldrift/board/image-file";
+import { createAssetId, createSyncId, nextPositiveId, type BoardImage } from "@meldrift/board-data/board-state";
+import { prepareImageFile } from "@meldrift/board-data/image-file";
 
-export type { BoardImage } from "@meldrift/board/board-state";
+export type { BoardImage } from "@meldrift/board-data/board-state";
 
 type UseBoardImagesOptions = {
     initialImages: BoardImage[];

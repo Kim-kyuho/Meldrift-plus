@@ -1,6 +1,6 @@
 # BoardClient 상세설계
 
-소스: `packages/board/src/components/BoardClient.tsx`
+소스: `packages/ui/src/features/board/BoardClient.tsx`
 
 보드 화면 전체다. 카드 네 종류, 드로잉, 검색, 탐색, 줌, 순서 패널, Markdown 뷰, AI 어시스턴트를 여기서 조립한다. 두 Edition이 같은 파일을 쓴다.
 
@@ -88,10 +88,10 @@ const withPermission = (action) => () => {
 
 | 출처 | 훅 |
 | --- | --- |
-| `@meldrift/board` | `useBoardMemos`, `useBoardImages`, `useBoardMermaids`, `useBoardTables`, `useCardLayer`, `useMemoReorder`, `useAiAssistant` |
+| `@meldrift/ui` | `useBoardMemos`, `useBoardImages`, `useBoardMermaids`, `useBoardTables`, `useCardLayer`, `useMemoReorder`, `useAiAssistant` |
 | `@meldrift/ui` | `useBoardZoom`, `useBoardPinchZoom`, `useBoardScroll`, `useBoardSearch`, `useBoardMemoFocus`, `useBoardDrawing`, `useBoardImageDrop` |
 
-`@meldrift/ui` 쪽은 저장과 무관한 화면 조작이고, `@meldrift/board` 쪽은 보드 데이터를 만진다.
+보드 화면과 카드 상태를 다루는 React 훅은 `@meldrift/ui`에 둔다. 데이터 구조·저장·변환 코드는 `@meldrift/board-data`에서 가져온다.
 
 ## 렌더 구조
 

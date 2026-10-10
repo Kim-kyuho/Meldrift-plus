@@ -1,9 +1,9 @@
-import type { BoardDatabaseClient } from "@meldrift/board/browser-db/client";
-import type { BoardSnapshot } from "@meldrift/board/board-state";
-import type { OutboxBatch } from "@meldrift/board/browser-db/protocol";
+import type { BoardDatabaseClient } from "@meldrift/board-data/browser-db/client";
+import type { BoardSnapshot } from "@meldrift/board-data/board-state";
+import type { OutboxBatch } from "@meldrift/board-data/browser-db/protocol";
 import {
     changeEnvelopeBytes, maxChangeBytes, maxStagedOperations, stagedChangeMimeType,
-} from "@meldrift/board/board-delta";
+} from "@meldrift/board-data/board-delta";
 import { AssetUploadError, uploadAsset } from "./asset-upload";
 import { snapshotDelayMs } from "./snapshot";
 import type { SyncStatus } from "./snapshot-sync";

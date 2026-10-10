@@ -1,14 +1,14 @@
 import { act, renderHook } from "@testing-library/react";
 import { createRef } from "react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { useBoardImages, type BoardImage } from "@meldrift/board/useBoardImages";
-import { useBoardMemos, type BoardMemo } from "@meldrift/board/useBoardMemos";
-import { useBoardMermaids, type BoardMermaid } from "@meldrift/board/useBoardMermaids";
-import { useBoardTables, type BoardTable } from "@meldrift/board/useBoardTables";
-import { prepareImageFile } from "@meldrift/board/image-file";
+import { useBoardImages, type BoardImage } from "@meldrift/ui/useBoardImages";
+import { useBoardMemos, type BoardMemo } from "@meldrift/ui/useBoardMemos";
+import { useBoardMermaids, type BoardMermaid } from "@meldrift/ui/useBoardMermaids";
+import { useBoardTables, type BoardTable } from "@meldrift/ui/useBoardTables";
+import { prepareImageFile } from "@meldrift/board-data/image-file";
 
-vi.mock("@meldrift/board/image-file", async (importOriginal) => ({
-    ...await importOriginal<typeof import("@meldrift/board/image-file")>(),
+vi.mock("@meldrift/board-data/image-file", async (importOriginal) => ({
+    ...await importOriginal<typeof import("@meldrift/board-data/image-file")>(),
     prepareImageFile: vi.fn(),
 }));
 

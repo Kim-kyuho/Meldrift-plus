@@ -1,9 +1,9 @@
 "use client";
 
 import { useCallback, type ComponentProps } from "react";
-import { useBoardPersistence } from "@meldrift/board/useBoardPersistence";
-import type { BoardControls as SharedBoardControls } from "@meldrift/board/BoardClient";
-import type { BoardSnapshot } from "@meldrift/board/board-state";
+import { useBoardPersistence } from "@meldrift/ui/useBoardPersistence";
+import type { BoardControls as SharedBoardControls } from "@meldrift/ui/BoardClient";
+import type { BoardSnapshot } from "@meldrift/board-data/board-state";
 import ConfirmDialog from "@meldrift/ui/ConfirmDialog";
 import { useBoardTransfer, type BoardFileActions } from "@/hooks/useBoardTransfer";
 import BoardMenu from "./BoardMenu";

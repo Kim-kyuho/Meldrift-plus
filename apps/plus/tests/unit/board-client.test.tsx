@@ -1,8 +1,8 @@
 import { act, render, screen } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import type { ComponentProps } from "react";
-import SharedBoardClient from "@meldrift/board/BoardClient";
-import { createEmptyBoardSnapshot } from "@meldrift/board/board-state";
+import SharedBoardClient from "@meldrift/ui/BoardClient";
+import { createEmptyBoardSnapshot } from "@meldrift/board-data/board-state";
 import BoardClient from "@/components/BoardClient";
 
 const mocks = vi.hoisted(() => ({
@@ -13,7 +13,7 @@ const mocks = vi.hoisted(() => ({
     setMessage: vi.fn(),
 }));
 
-vi.mock("@meldrift/board/BoardClient", () => ({
+vi.mock("@meldrift/ui/BoardClient", () => ({
     default: vi.fn((props: ComponentProps<typeof SharedBoardClient>) => (
         <div data-testid="shared-board" data-can-edit={props.canEdit}>
             {props.renderControls({

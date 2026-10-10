@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import type { BoardControls as BoardControlsProps } from "@meldrift/board/BoardClient";
+import type { BoardControls as BoardControlsProps } from "@meldrift/ui/BoardClient";
 import ConfirmDialog from "@meldrift/ui/ConfirmDialog";
 import { useBoardTransfer } from "@/hooks/useBoardTransfer";
 import { useBoardPersistance } from "@/hooks/useBoardPersistance";

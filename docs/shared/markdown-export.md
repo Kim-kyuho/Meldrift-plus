@@ -1,6 +1,6 @@
 # Markdown 컴파일과 내보내기 상세설계
 
-소스: `packages/board/src/board-markdown.ts`, `packages/board/src/hooks/useBoardMarkdown.ts`, `packages/board/src/components/BoardMarkdownView.tsx`
+소스: `packages/board-data/src/board-markdown.ts`, `packages/ui/src/features/markdown/useBoardMarkdown.ts`, `packages/ui/src/features/markdown/BoardMarkdownView.tsx`
 
 ## 어디서 계산하나
 

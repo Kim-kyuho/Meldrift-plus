@@ -12,11 +12,11 @@ import {
     type BoardPlan,
 } from "@meldrift/core/board-plan";
 import { nextMemoOrder } from "@meldrift/core/memo-order";
-import { createSyncId } from "@meldrift/board/board-state";
-import type { BoardImage } from "@meldrift/board/board-state";
-import type { BoardMemo } from "@meldrift/board/board-state";
-import type { BoardMermaid } from "@meldrift/board/board-state";
-import type { BoardTable } from "@meldrift/board/board-state";
+import { createSyncId } from "@meldrift/board-data/board-state";
+import type { BoardImage } from "@meldrift/board-data/board-state";
+import type { BoardMemo } from "@meldrift/board-data/board-state";
+import type { BoardMermaid } from "@meldrift/board-data/board-state";
+import type { BoardTable } from "@meldrift/board-data/board-state";
 
 export type AiChatMessage = {
     role: "user" | "assistant";

@@ -1,6 +1,6 @@
 # AI 어시스턴트 상세설계
 
-소스: `packages/ui/src/features/ai/AiAssistantButton.tsx`, `packages/ui/src/features/ai/AiChatPanel.tsx`, `packages/ui/src/features/ai/GeminiIcon.tsx`, `packages/board/src/hooks/useAiAssistant.ts`, `packages/core/src/board-plan.ts`, `lib/ai/assistant.ts`, `lib/ai/meldrift-guide.ts`, `app/api/ai/status/route.ts`, `app/api/ai/chat/route.ts`
+소스: `packages/ui/src/features/ai/AiAssistantButton.tsx`, `packages/ui/src/features/ai/AiChatPanel.tsx`, `packages/ui/src/features/ai/GeminiIcon.tsx`, `packages/ui/src/features/ai/useAiAssistant.ts`, `packages/core/src/board-plan.ts`, `lib/ai/assistant.ts`, `lib/ai/meldrift-guide.ts`, `app/api/ai/status/route.ts`, `app/api/ai/chat/route.ts`
 
 ## 역할
 

@@ -1,13 +1,13 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState, type Dispatch, type ReactNode, type RefObject, type SetStateAction } from "react";
-import ImageCard from "@meldrift/board/ImageCard";
+import ImageCard from "@meldrift/ui/ImageCard";
 import MemoCard from "@meldrift/ui/MemoCard";
 import BoardToolBar from "@meldrift/ui/BoardToolBar";
 import BoardMessage from "@meldrift/ui/BoardMessage";
 import BoardSearchPanel from "@meldrift/ui/BoardSearchPanel";
 import BoardNavigator from "@meldrift/ui/BoardNavigator";
-import BoardMarkdownView from "@meldrift/board/BoardMarkdownView";
+import BoardMarkdownView from "@meldrift/ui/BoardMarkdownView";
 import MemoReorderPanel from "@meldrift/ui/MemoReorderPanel";
 import AboutModal from "@meldrift/ui/AboutModal";
 import AiAssistantButton from "@meldrift/ui/AiAssistantButton";
@@ -23,22 +23,22 @@ import { useSelectionPointer } from "@meldrift/ui/useSelectionPointer";
 import BoardImageDropOverlay from "@meldrift/ui/BoardImageDropOverlay";
 import { useBoardImageDrop } from "@meldrift/ui/useBoardImageDrop";
 import { useBoardDrawing } from "@meldrift/ui/useBoardDrawing";
-import { useCardLayer } from "@meldrift/board/useCardLayer";
-import { useBoardSelection } from "@meldrift/board/useBoardSelection";
-import { useBoardImages } from "@meldrift/board/useBoardImages";
-import { imageInputAccept } from "@meldrift/board/image-file";
-import type { BoardSnapshot } from "@meldrift/board/board-state";
+import { useCardLayer } from "@meldrift/ui/useCardLayer";
+import { useBoardSelection } from "@meldrift/ui/useBoardSelection";
+import { useBoardImages } from "@meldrift/ui/useBoardImages";
+import { imageInputAccept } from "@meldrift/board-data/image-file";
+import type { BoardSnapshot } from "@meldrift/board-data/board-state";
 import type { CardType } from "@meldrift/core/cards";
-import { useBoardMermaids } from "@meldrift/board/useBoardMermaids";
-import { useBoardTables } from "@meldrift/board/useBoardTables";
+import { useBoardMermaids } from "@meldrift/ui/useBoardMermaids";
+import { useBoardTables } from "@meldrift/ui/useBoardTables";
 import { useBoardMemoFocus } from "@meldrift/ui/useBoardMemoFocus";
-import { useBoardMemos } from "@meldrift/board/useBoardMemos";
+import { useBoardMemos } from "@meldrift/ui/useBoardMemos";
 import { useBoardScroll } from "@meldrift/ui/useBoardScroll";
 import { useBoardSearch } from "@meldrift/ui/useBoardSearch";
 import { useBoardZoom } from "@meldrift/ui/useBoardZoom";
 import { useBoardPinchZoom } from "@meldrift/ui/useBoardPinchZoom";
-import { useAiAssistant } from "@meldrift/board/useAiAssistant";
-import { useMemoReorder } from "@meldrift/board/useMemoReorder";
+import { useAiAssistant } from "@meldrift/ui/useAiAssistant";
+import { useMemoReorder } from "@meldrift/ui/useMemoReorder";
 
 export type BoardControls = {
     snapshot: BoardSnapshot;

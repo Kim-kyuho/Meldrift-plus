@@ -1,6 +1,6 @@
 # 변경분 동기화 상세설계
 
-소스: `packages/board/src/board-delta.ts`, `packages/board/src/browser-db/worker.ts`, `lib/change-sync.ts`, `lib/sync-operations.ts`, `lib/sync-commit.ts`, `lib/editor-guard.ts`, `lib/assets.ts`, `lib/asset-upload.ts`, `lib/asset-download.ts`, `lib/board-transition.ts`, `lib/board-state-store.ts`, `hooks/useBoardSnapshot.ts`, `app/api/boards/[boardId]/state/route.ts`, `app/api/boards/[boardId]/changes/route.ts`, `app/api/boards/[boardId]/uploads/**`, `app/api/boards/[boardId]/assets/**`, `app/api/boards/[boardId]/transition/route.ts`
+소스: `packages/board-data/src/board-delta.ts`, `packages/board-data/src/browser-db/worker.ts`, `lib/change-sync.ts`, `lib/sync-operations.ts`, `lib/sync-commit.ts`, `lib/editor-guard.ts`, `lib/assets.ts`, `lib/asset-upload.ts`, `lib/asset-download.ts`, `lib/board-transition.ts`, `lib/board-state-store.ts`, `hooks/useBoardSnapshot.ts`, `app/api/boards/[boardId]/state/route.ts`, `app/api/boards/[boardId]/changes/route.ts`, `app/api/boards/[boardId]/uploads/**`, `app/api/boards/[boardId]/assets/**`, `app/api/boards/[boardId]/transition/route.ts`
 
 ## 무엇이 바뀌나
 

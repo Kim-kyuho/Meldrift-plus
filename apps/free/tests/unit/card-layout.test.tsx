@@ -1,7 +1,7 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import type { ReactNode } from "react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import ImageCard from "@meldrift/board/ImageCard";
+import ImageCard from "@meldrift/ui/ImageCard";
 import MermaidCard from "@meldrift/ui/MermaidCard";
 import TableCard from "@meldrift/ui/TableCard";
 

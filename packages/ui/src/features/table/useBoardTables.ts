@@ -1,8 +1,8 @@
 import { RefObject, useState } from "react";
 import { defaultTableSource } from "@meldrift/core/table-card";
-import { createSyncId, nextPositiveId, type BoardTable } from "@meldrift/board/board-state";
+import { createSyncId, nextPositiveId, type BoardTable } from "@meldrift/board-data/board-state";
 
-export type { BoardTable } from "@meldrift/board/board-state";
+export type { BoardTable } from "@meldrift/board-data/board-state";
 
 type UseBoardTablesOptions = {
     initialTables: BoardTable[];

@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { createBoardDatabase, type BoardDatabaseClient } from "@meldrift/board/browser-db/client";
-import { createAssetId, type BoardInfo, type BoardSnapshot } from "@meldrift/board/board-state";
-import { prepareImageFile } from "@meldrift/board/image-file";
+import { createBoardDatabase, type BoardDatabaseClient } from "@meldrift/board-data/browser-db/client";
+import { createAssetId, type BoardInfo, type BoardSnapshot } from "@meldrift/board-data/board-state";
+import { prepareImageFile } from "@meldrift/board-data/image-file";
 import { SnapshotSync, type SyncStatus } from "@/lib/snapshot-sync";
 import { ChangeSync, lookupChange } from "@/lib/change-sync";
 import { downloadAsset } from "@/lib/asset-download";
-import type { StoredBoard } from "@meldrift/board/browser-db/protocol";
+import type { StoredBoard } from "@meldrift/board-data/browser-db/protocol";
 
 type BoardSync = SnapshotSync | ChangeSync;
 
