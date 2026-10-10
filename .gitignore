@@ -61,3 +61,7 @@ node_modules/
 # Use `git add -f` if a hand-written one is ever worth tracking.
 AGENTS.md
 CLAUDE.md
+
+# Claude Code local state (per-machine settings and review worktrees)
+.claude/settings.local.json
+.claude/worktrees/

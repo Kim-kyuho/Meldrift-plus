@@ -578,7 +578,7 @@ export default function BoardClient({
             <div
                 ref={cardLocationRef}
                 className="board-scroll-layer h-full w-full overflow-auto"
-                style={selectionActive ? { touchAction: "none" } : undefined}
+                data-selection-active={selectionActive || undefined}
                 onPointerDown={selectionActive ? handleSelectionPointerDown : handleBoardPanStart}
                 onPointerMove={selectionActive ? handleSelectionPointerMove : handleBoardPanMove}
                 onPointerUp={selectionActive ? handleSelectionPointerUp : handleBoardPanEnd}

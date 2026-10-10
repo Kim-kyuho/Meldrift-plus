@@ -14,7 +14,7 @@
     "packages/board-data"
   ],
   "scripts": {
-    "dev": "concurrently --kill-others --names free,plus --prefix-colors cyan,magenta \"npm run dev --workspace=meldrift-free -- --hostname 0.0.0.0 --port 3000\" \"npm run dev --workspace=meldrift-plus -- --hostname 0.0.0.0 --port 3001\"",
+    "dev": "concurrently --kill-others --names free,plus --prefix-colors cyan,magenta \"npm run dev --workspace=meldrift-free -- --hostname 0.0.0.0 --port 3000 --experimental-https\" \"npm run dev --workspace=meldrift-plus -- --hostname 0.0.0.0 --port 3001\"",
     "dev:free": "npm run dev --workspace=meldrift-free -- --hostname 0.0.0.0 --port 3000",
     "dev:plus": "npm run dev --workspace=meldrift-plus -- --hostname 0.0.0.0 --port 3001",
     "build": "npm run build --workspace=meldrift-free && npm run build --workspace=meldrift-plus",
