@@ -1,6 +1,6 @@
 # 보드 반출입 상세설계
 
-소스: `hooks/useBoardTransfer.ts`, `packages/board/src/browser-db/client.ts`
+소스: `hooks/useBoardTransfer.ts`, `packages/board-data/src/browser-db/client.ts`
 
 ## 목적
 

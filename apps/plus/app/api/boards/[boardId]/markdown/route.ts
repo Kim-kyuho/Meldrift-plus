@@ -6,7 +6,7 @@ import { NextResponse } from "next/server";
 import TurndownService from "turndown";
 import { loadSavedBoardSnapshot } from "@/lib/saved-board-snapshot";
 import { loadBoardState } from "@/lib/board-state-store";
-import { compileBoardMarkdown } from "@meldrift/board/board-markdown";
+import { compileBoardMarkdown } from "@meldrift/board-data/board-markdown";
 
 type CompiledCardRow = {
     memo_id: number;

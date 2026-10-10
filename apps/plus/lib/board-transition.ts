@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 import { eq, sql } from "drizzle-orm";
-import { assetChunkBytes } from "@meldrift/board/board-delta";
-import type { BoardInfo, BoardSnapshot } from "@meldrift/board/board-state";
+import { assetChunkBytes } from "@meldrift/board-data/board-delta";
+import type { BoardInfo, BoardSnapshot } from "@meldrift/board-data/board-state";
 import { getDb } from "./db";
 import {
     db_boardSnapshots, db_boardSync, db_drawingStrokes, db_images, db_memos, db_mermaids, db_tables,

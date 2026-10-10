@@ -1,6 +1,6 @@
 # 보드 상태와 검증 상세설계
 
-소스: `packages/board/src/board-state.ts`
+소스: `packages/board-data/src/board-state.ts`
 
 ## 목적
 

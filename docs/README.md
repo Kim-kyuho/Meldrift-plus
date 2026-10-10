@@ -21,10 +21,10 @@ Meldrift는 npm workspace 모노레포라 문서에서 경로를 두 가지 형�
 | --- | --- |
 | `@meldrift/core` | 프레임워크에 기대지 않는 규칙과 스키마 — 카드 타입, 메모 순서, 획 데이터, 표 소스, AI 보드 계획 |
 | `@meldrift/ui` | 두 Edition이 함께 쓰는 React 컴포넌트와 훅 |
-| `@meldrift/board` | 보드 화면 전체 — `BoardClient`, 카드 컬렉션 훅, 브라우저 SQLite, 스냅샷 타입, Markdown 컴파일, AI 어시스턴트 훅 |
+| `@meldrift/board-data` | 보드 데이터 — 브라우저 SQLite·IndexedDB, 스냅샷 타입과 검증, 변경분 모델, 이미지 변환, Markdown 컴파일 |
 | `@meldrift/ai` | 어시스턴트 본체 — 도구 정의, Gemini 호출, 프롬프트 뼈대 |
 
-`@meldrift/board`는 보드 데이터를 만지는 계층이고 `@meldrift/ui`는 그렇지 않은 화면 부품이다. 이미지 카드만 `@meldrift/ui`가 아니라 `@meldrift/board`에 있는데, 바이트와 MIME을 다루느라 보드 데이터에 묶여 있기 때문이다.
+`@meldrift/ui`는 보드 화면과 React 훅을 조립하고, `@meldrift/board-data`는 데이터·저장·변환을 제공한다. 의존 방향은 `ui → board-data → core`다.
 
 두 Edition의 앱(`apps/free`, `apps/plus`)에 남은 것은 **껍데기와 저장 방식**뿐이다. 보드 화면은 양쪽이 같은 `BoardClient`를 쓴다.
 

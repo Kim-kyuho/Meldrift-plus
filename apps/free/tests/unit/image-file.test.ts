@@ -3,7 +3,7 @@ import {
     fitImageSize,
     imageBytesToPng,
     prepareImageFile,
-} from "@meldrift/board/image-file";
+} from "@meldrift/board-data/image-file";
 
 // Safari has no canvas WebP encoder and answers the request with PNG, so the encoder map says what
 // each requested type actually comes back as.

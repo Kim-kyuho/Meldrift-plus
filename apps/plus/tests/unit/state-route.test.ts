@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { GET } from "@/app/api/boards/[boardId]/state/route";
-import { createEmptyBoardSnapshot } from "@meldrift/board/board-state";
+import { createEmptyBoardSnapshot } from "@meldrift/board-data/board-state";
 
 const mocks = vi.hoisted(() => ({
     getDb: vi.fn(),

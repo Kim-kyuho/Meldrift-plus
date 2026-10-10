@@ -1,8 +1,8 @@
 import { RefObject, useState } from "react";
-import { createSyncId, nextPositiveId, type BoardMemo } from "@meldrift/board/board-state";
+import { createSyncId, nextPositiveId, type BoardMemo } from "@meldrift/board-data/board-state";
 import { nextMemoOrder } from "@meldrift/core/memo-order";
 
-export type { BoardMemo } from "@meldrift/board/board-state";
+export type { BoardMemo } from "@meldrift/board-data/board-state";
 
 type UseBoardMemosOptions = {
     initialMemos: BoardMemo[];

@@ -1,10 +1,10 @@
 import { act, renderHook } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 import { useRef, useState } from "react";
-import { useCardLayer } from "@meldrift/board/useCardLayer";
-import { useBoardMemos } from "@meldrift/board/useBoardMemos";
-import { useBoardMermaids } from "@meldrift/board/useBoardMermaids";
-import { useBoardTables } from "@meldrift/board/useBoardTables";
+import { useCardLayer } from "@meldrift/ui/useCardLayer";
+import { useBoardMemos } from "@meldrift/ui/useBoardMemos";
+import { useBoardMermaids } from "@meldrift/ui/useBoardMermaids";
+import { useBoardTables } from "@meldrift/ui/useBoardTables";
 import type { BoardImage, BoardMemo, BoardMermaid, BoardTable } from "@/lib/board-state";
 
 const memo: BoardMemo = { id: 1, syncId: "memo-1", boardId: 1, content: "memo", x: 0, y: 0, z: 1, width: 100, height: 100, color: "#fff", sortOrder: 1 };

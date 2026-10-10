@@ -1,10 +1,10 @@
 import { act, renderHook } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { useImageCard, type ImageCardData } from "@meldrift/board/useImageCard";
+import { useImageCard, type ImageCardData } from "@meldrift/ui/useImageCard";
 import { useMemoCard, type MemoCardData } from "@meldrift/ui/useMemoCard";
 import { useMermaidCard, type MermaidCardData } from "@meldrift/ui/useMermaidCard";
 import { useTableCard } from "@meldrift/ui/useTableCard";
-import type { BoardTable } from "@meldrift/board/useBoardTables";
+import type { BoardTable } from "@meldrift/ui/useBoardTables";
 
 function dispatchBoardPress(type: "pointerdown" | "pointerup") {
     const board = document.createElement("div");

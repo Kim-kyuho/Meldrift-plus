@@ -1,6 +1,6 @@
 # MemoReorderPanel 상세설계
 
-소스: `packages/ui/src/features/memo/MemoReorderPanel.tsx`, `packages/board/src/hooks/useMemoReorder.ts`, `packages/core/src/memo-order.ts`
+소스: `packages/ui/src/features/memo/MemoReorderPanel.tsx`, `packages/ui/src/features/memo/useMemoReorder.ts`, `packages/core/src/memo-order.ts`
 
 ## 역할
 

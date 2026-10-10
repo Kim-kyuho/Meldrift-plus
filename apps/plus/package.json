@@ -27,7 +27,7 @@
   "dependencies": {
     "@google/genai": "^2.17.1",
     "@meldrift/ai": "*",
-    "@meldrift/board": "*",
+    "@meldrift/board-data": "*",
     "@meldrift/core": "*",
     "@meldrift/ui": "*",
     "@mermaid-js/mermaid-zenuml": "^0.2.3",

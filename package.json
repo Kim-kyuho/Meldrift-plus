@@ -11,7 +11,7 @@
     "packages/ai",
     "packages/core",
     "packages/ui",
-    "packages/board"
+    "packages/board-data"
   ],
   "scripts": {
     "dev": "concurrently --kill-others --names free,plus --prefix-colors cyan,magenta \"npm run dev --workspace=meldrift-free -- --hostname 0.0.0.0 --port 3000 --experimental-https\" \"npm run dev --workspace=meldrift-plus -- --hostname 0.0.0.0 --port 3001\"",

@@ -93,6 +93,6 @@ useEffect(() => {
 
 Meldrift 적용 위치:
 
-- `packages/board/src/hooks/useBoardImages.ts`
-- `packages/board/src/image-file.ts`
-- `packages/board/src/components/ImageCard.tsx`
+- `packages/ui/src/features/image/useBoardImages.ts`
+- `packages/board-data/src/image-file.ts`
+- `packages/ui/src/features/image/ImageCard.tsx`

@@ -64,8 +64,8 @@ id를 명시해 INSERT하므로 화면이 들고 있던 카드 id는 저장 후�
 
 적용 위치:
 
-- `packages/board/src/components/BoardClient.tsx`
-- `packages/board/src/hooks/useBoardMemos.ts`
-- `packages/board/src/browser-db/worker.ts`
+- `packages/ui/src/features/board/BoardClient.tsx`
+- `packages/ui/src/features/memo/useBoardMemos.ts`
+- `packages/board-data/src/browser-db/worker.ts`
 - `apps/free/hooks/useBoardPersistance.ts`
 - `apps/plus/lib/snapshot-sync.ts`

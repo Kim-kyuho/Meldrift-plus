@@ -1,4 +1,4 @@
-import { assetChunkBytes } from "@meldrift/board/board-delta";
+import { assetChunkBytes } from "@meldrift/board-data/board-delta";
 
 export class AssetUploadError extends Error {
     constructor(message: string, readonly status: number) {

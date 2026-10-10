@@ -1,7 +1,7 @@
 import initSqlJs from "sql.js/dist/sql-asm.js";
 import type { Database as SqlDatabase } from "sql.js";
 import type { Database, SqlValue } from "@sqlite.org/sqlite-wasm";
-import { isSupportedVersion, readSnapshot } from "@meldrift/board/sqlite-codec";
+import { isSupportedVersion, readSnapshot } from "@meldrift/board-data/sqlite-codec";
 import { maxSnapshotBytes } from "./snapshot";
 
 let sqlite: ReturnType<typeof initSqlJs> | undefined;

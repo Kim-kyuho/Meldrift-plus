@@ -2,8 +2,8 @@ import { act, render, renderHook, screen, waitFor } from "@testing-library/react
 import { strFromU8, unzipSync } from "fflate";
 import { createElement } from "react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import BoardMarkdownView from "@meldrift/board/BoardMarkdownView";
-import { useBoardMarkdown } from "@meldrift/board/useBoardMarkdown";
+import BoardMarkdownView from "@meldrift/ui/BoardMarkdownView";
+import { useBoardMarkdown } from "@meldrift/ui/useBoardMarkdown";
 import { createEmptyBoardSnapshot, type BoardSnapshot } from "@/lib/board-state";
 
 function installObjectUrlMock() {

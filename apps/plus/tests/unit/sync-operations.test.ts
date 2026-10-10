@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { boardOperationFields } from "@meldrift/board/board-delta";
+import { boardOperationFields } from "@meldrift/board-data/board-delta";
 import {
     ChangeRequestError, changeFieldSchemas, changeRequestDigest, parseChangeRequest,
 } from "@/lib/sync-operations";

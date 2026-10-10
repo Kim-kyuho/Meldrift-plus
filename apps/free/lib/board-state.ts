@@ -1,1 +1,1 @@
-export * from "@meldrift/board/board-state";
+export * from "@meldrift/board-data/board-state";

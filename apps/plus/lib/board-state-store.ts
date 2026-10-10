@@ -1,7 +1,7 @@
 import { asc, eq } from "drizzle-orm";
 import { getDb } from "./db";
 import { db_memos, db_images, db_mermaids, db_tables, db_drawingStrokes } from "./db/schema";
-import type { BoardInfo, BoardSnapshot } from "@meldrift/board/board-state";
+import type { BoardInfo, BoardSnapshot } from "@meldrift/board-data/board-state";
 import { rankMemoOrders } from "@meldrift/core/memo-order";
 
 export async function loadBoardState(board: BoardInfo): Promise<BoardSnapshot> {

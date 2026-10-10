@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { compileBoardMarkdown } from "@meldrift/board/board-markdown";
+import { compileBoardMarkdown } from "@meldrift/board-data/board-markdown";
 import { createEmptyBoardSnapshot, type BoardMemo, type BoardSnapshot } from "@/lib/board-state";
 
 // 문서 순서는 메모의 sortOrder다. 배열 순서(생성 순서)나 좌표가 아니다.

@@ -1,1 +1,1 @@
-export * from "@meldrift/board/browser-db/client";
+export * from "@meldrift/board-data/browser-db/client";

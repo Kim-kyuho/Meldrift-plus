@@ -1,11 +1,11 @@
 import { act, renderHook } from "@testing-library/react";
 import { createRef, useState } from "react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { useAiAssistant } from "@meldrift/board/useAiAssistant";
-import { useBoardImages } from "@meldrift/board/useBoardImages";
-import { useBoardMemos } from "@meldrift/board/useBoardMemos";
-import { useBoardMermaids } from "@meldrift/board/useBoardMermaids";
-import { useBoardTables } from "@meldrift/board/useBoardTables";
+import { useAiAssistant } from "@meldrift/ui/useAiAssistant";
+import { useBoardImages } from "@meldrift/ui/useBoardImages";
+import { useBoardMemos } from "@meldrift/ui/useBoardMemos";
+import { useBoardMermaids } from "@meldrift/ui/useBoardMermaids";
+import { useBoardTables } from "@meldrift/ui/useBoardTables";
 import { defaultBoard, type BoardImage, type BoardMemo } from "@/lib/board-state";
 
 // 어시스턴트가 제안한 카드는 임시 ID(음수)로 올라가고, BoardClient의 자동 저장은 제안이

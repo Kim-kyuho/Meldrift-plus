@@ -1,6 +1,6 @@
 "use client";
 
-import SharedBoardClient from "@meldrift/board/BoardClient";
+import SharedBoardClient from "@meldrift/ui/BoardClient";
 import { useBoardLoad } from "@/hooks/useBoardLoad";
 import { isBoardContentEmpty } from "@/lib/help";
 import BoardControls from "./BoardControls";

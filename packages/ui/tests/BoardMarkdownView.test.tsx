@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
-import BoardMarkdownView from "../src/features/markdown/BoardMarkdownView";
+import BoardMarkdownView from "../src/features/markdown/BoardMarkdownPreview";
 
 vi.mock("../src/features/mermaid/useMermaidRenderer", () => ({
     useMermaidRenderer: ({ source }: { source: string }) => ({

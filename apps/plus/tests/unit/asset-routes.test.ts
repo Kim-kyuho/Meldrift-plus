@@ -9,7 +9,7 @@ import { PUT as putChunk } from "@/app/api/boards/[boardId]/uploads/[uploadId]/c
 import { POST as completeUpload } from "@/app/api/boards/[boardId]/uploads/[uploadId]/complete/route";
 import { GET as getChunk } from "@/app/api/boards/[boardId]/assets/[assetId]/chunks/[index]/route";
 import { GET as getAssetBytes } from "@/app/api/boards/[boardId]/assets/[assetId]/bytes/route";
-import { maxStoredImageBytes } from "@meldrift/board/image-file";
+import { maxStoredImageBytes } from "@meldrift/board-data/image-file";
 
 const mocks = vi.hoisted(() => ({
     user: vi.fn(), permission: vi.fn(), execute: vi.fn(), rows: vi.fn(), deleteWhere: vi.fn(),

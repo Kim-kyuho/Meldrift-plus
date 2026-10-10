@@ -1,6 +1,6 @@
 import TurndownService from "turndown";
 import { cardTypeOrder, type CardType } from "@meldrift/core/cards";
-import type { BoardSnapshot } from "@meldrift/board/board-state";
+import type { BoardSnapshot } from "@meldrift/board-data/board-state";
 import { sortMemosByOrder } from "@meldrift/core/memo-order";
 import { tableSourceToMarkdown } from "@meldrift/core/table-card";
 

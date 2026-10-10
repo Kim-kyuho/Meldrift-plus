@@ -9,7 +9,7 @@ import {
     defaultBoard,
     type BoardInfo,
     type BoardSnapshot,
-} from "@meldrift/board/board-state";
+} from "@meldrift/board-data/board-state";
 import type { BrowserDbRequest, BrowserDbResponse, SyncMetadata, StoredAsset, StoredBoard, OutboxBatch, OutboxState } from "./protocol";
 import { diffBoardSnapshots, mergeBoardOperations, type BoardOperation } from "../board-delta";
 import { schemaSql, migrateDatabase, isSupportedVersion, readSnapshot, replaceSnapshot } from "../sqlite-codec";

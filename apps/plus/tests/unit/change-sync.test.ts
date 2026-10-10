@@ -1,9 +1,9 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { ChangeSync } from "@/lib/change-sync";
-import { createEmptyBoardSnapshot } from "@meldrift/board/board-state";
-import type { BoardDatabaseClient } from "@meldrift/board/browser-db/client";
-import type { BoardOperation } from "@meldrift/board/board-delta";
-import type { OutboxBatch, StoredBoard } from "@meldrift/board/browser-db/protocol";
+import { createEmptyBoardSnapshot } from "@meldrift/board-data/board-state";
+import type { BoardDatabaseClient } from "@meldrift/board-data/browser-db/client";
+import type { BoardOperation } from "@meldrift/board-data/board-delta";
+import type { OutboxBatch, StoredBoard } from "@meldrift/board-data/browser-db/protocol";
 
 const move: BoardOperation = { type: "memo", syncId: "memo-1", action: "update", changes: { x: 40 } };
 const resize: BoardOperation = { type: "memo", syncId: "memo-2", action: "update", changes: { width: 400 } };

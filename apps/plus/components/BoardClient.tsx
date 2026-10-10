@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import SharedBoardClient, { type BoardControls as SharedBoardControls } from "@meldrift/board/BoardClient";
-import type { BoardSnapshot } from "@meldrift/board/board-state";
+import SharedBoardClient, { type BoardControls as SharedBoardControls } from "@meldrift/ui/BoardClient";
+import type { BoardSnapshot } from "@meldrift/board-data/board-state";
 import { useBoardAuth } from "@/hooks/useBoardAuth";
 import { useBoardPreview } from "@/hooks/useBoardPreview";
 import BoardControls from "./BoardControls";

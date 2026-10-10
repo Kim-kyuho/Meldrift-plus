@@ -1,6 +1,6 @@
 # 브라우저 데이터베이스 상세설계
 
-소스: `packages/board/src/browser-db/client.ts`, `packages/board/src/browser-db/protocol.ts`, `packages/board/src/browser-db/worker.ts`, `packages/board/src/sqlite-codec.ts`
+소스: `packages/board-data/src/browser-db/client.ts`, `packages/board-data/src/browser-db/protocol.ts`, `packages/board-data/src/browser-db/worker.ts`, `packages/board-data/src/sqlite-codec.ts`
 
 ## 목적
 

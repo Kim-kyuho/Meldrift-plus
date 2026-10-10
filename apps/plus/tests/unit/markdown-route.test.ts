@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { PgDialect } from "drizzle-orm/pg-core";
 import type { SQL } from "drizzle-orm";
 import { GET } from "@/app/api/boards/[boardId]/markdown/route";
-import { createEmptyBoardSnapshot } from "@meldrift/board/board-state";
+import { createEmptyBoardSnapshot } from "@meldrift/board-data/board-state";
 
 // 문서 순서는 메모의 sort_order다. 판정식이 Free Edition의 compileBoardMarkdown과 같아야 한다.
 

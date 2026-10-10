@@ -2,4 +2,4 @@
 @import "@meldrift/ui/globals.css";
 
 @source "../../../packages/ui/src";
-@source "../../../packages/board/src";
+@source "../../../packages/board-data/src";

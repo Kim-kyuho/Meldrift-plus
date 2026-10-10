@@ -1,5 +1,5 @@
-import type { BoardDatabaseClient } from "@meldrift/board/browser-db/client";
-import type { BoardSnapshot } from "@meldrift/board/board-state";
+import type { BoardDatabaseClient } from "@meldrift/board-data/browser-db/client";
+import type { BoardSnapshot } from "@meldrift/board-data/board-state";
 import { maxSnapshotBytes, snapshotDelayMs } from "./snapshot";
 
 export type SyncStatus = "saved" | "local" | "saving" | "error" | "blocked";

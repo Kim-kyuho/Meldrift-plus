@@ -1,6 +1,6 @@
 # 보드 다중 선택 설계
 
-소스: `packages/board/src/hooks/useBoardSelection.ts`, `packages/ui/src/features/selection/SelectionLayer.tsx`, `packages/ui/src/features/selection/useSelectionPointer.ts`, `packages/ui/src/features/selection/SelectionToolBar.tsx`
+소스: `packages/ui/src/features/selection/useBoardSelection.ts`, `packages/ui/src/features/selection/SelectionLayer.tsx`, `packages/ui/src/features/selection/useSelectionPointer.ts`, `packages/ui/src/features/selection/SelectionToolBar.tsx`
 
 보드 툴바 맨 위의 `MousePointer` 버튼으로 선택 모드를 켠다. 선택 모드에서 드래그한 사각형에 걸치는 카드를 모두 선택하고, 선택된 카드 묶음을 한꺼번에 옮기거나 지운다.
 
@@ -26,7 +26,7 @@
 
 | 드로잉(기존) | 선택(신규) | 패키지 |
 | --- | --- | --- |
-| `useBoardDrawing` | `useBoardSelection` | `@meldrift/board` — 카드 컬렉션 네 개를 읽고 쓰기 때문에 `useCardLayer`와 같은 패키지에 둔다 |
+| `useBoardDrawing` | `useBoardSelection` | `@meldrift/ui` — 카드 컬렉션과 선택 상태를 다루는 React 훅 |
 | `useDrawingPointer` | `useSelectionPointer` | `@meldrift/ui` |
 | `DrawingLayer` | `SelectionLayer` | `@meldrift/ui` |
 | `DrawingToolBar` | `SelectionToolBar` | `@meldrift/ui` |
@@ -35,7 +35,7 @@
 | `onDrawingToggleClick` | `onSelectionToggleClick` | `BoardToolBar` prop |
 | `data-drawing-capture` | `data-selection-capture` | |
 
-선택에 쓰는 타입은 `packages/core/src/cards.ts`에 둔다. `@meldrift/ui`와 `@meldrift/board`가 함께 쓰기 때문이다.
+선택에 쓰는 타입은 `packages/core/src/cards.ts`에 둔다. `@meldrift/ui`와 `@meldrift/board-data`가 함께 쓰기 때문이다.
 
 ```ts
 export type SelectedCard = { type: CardType; id: number };                    // CardLayer에서 z를 뺀 형태
@@ -43,7 +43,7 @@ export type SelectionRect = { x: number; y: number; width: number; height: numbe
 export type SelectionOffset = { x: number; y: number };
 ```
 
-## `useBoardSelection` (`@meldrift/board`)
+## `useBoardSelection` (`@meldrift/ui`)
 
 ```ts
 type UseBoardSelectionOptions = {
@@ -234,7 +234,7 @@ AI 제안 대기(`hasPendingAiCards`) 동안에는 선택 모드에 들어갈 �
 
 | 종류 | 대상 |
 | --- | --- |
-| 단위 (`@meldrift/board`) | `useBoardSelection`: 겹침 판정(걸치기만 해도 선택), 합집합 상자, 보드 경계에서 `dx, dy` 자르기, 이동 시 선택 카드만 바뀌기, 삭제 후 선택 비우기 |
+| 단위 (`@meldrift/ui`) | `useBoardSelection`: 겹침 판정(걸치기만 해도 선택), 합집합 상자, 보드 경계에서 `dx, dy` 자르기, 이동 시 선택 카드만 바뀌기, 삭제 후 선택 비우기 |
 | 단위 (`@meldrift/ui`) | `useSelectionPointer`: 5px 미만 누름은 선택 해제만, 상자 안·밖 분기, 두 번째 터치에서 버리기 |
 | E2E (`apps/plus/tests/e2e/board-delta.spec.ts`) | 메모 두 개를 선택해 옮기면 변경 요청 하나에 `changes`가 `x, y`뿐인 `update` 두 개, 선택 밖 카드는 operation 없음. 삭제하면 `delete` 두 개 |
 | E2E (mobile/tablet safari) | 한 손가락 드래그로 선택되고, 더블탭 편집이 선택 모드에서도 열림 |
@@ -244,15 +244,15 @@ AI 제안 대기(`hasPendingAiCards`) 동안에는 선택 모드에 들어갈 �
 | 파일 | 변경 |
 | --- | --- |
 | `packages/core/src/cards.ts` | `SelectedCard` 추가 |
-| `packages/board/src/hooks/useBoardSelection.ts` | 신규 |
+| `packages/ui/src/features/selection/useBoardSelection.ts` | 신규 |
 | `packages/ui/src/features/selection/useSelectionPointer.ts` | 신규 |
 | `packages/ui/src/features/selection/SelectionLayer.tsx` | 신규 |
 | `packages/ui/src/features/selection/SelectionToolBar.tsx` | 신규 |
-| `packages/ui/package.json`, `packages/board/package.json` | export 추가 |
+| `packages/ui/package.json`, `packages/board-data/package.json` | export 추가 |
 | `packages/ui/src/features/board/BoardToolBar.tsx` | 버튼과 prop 추가 |
 | `packages/ui/src/features/{memo,image,mermaid,table}/*Card.tsx` | `groupOffset` prop |
 | `useMemoCard`, `useImageCard`, `useMermaidCard`, `useTableCard` | 편집 중이 아닐 때 위치 동기화 |
-| `packages/board/src/components/BoardClient.tsx` | 조립 |
+| `packages/ui/src/features/board/BoardClient.tsx` | 조립 |
 | `apps/{free,plus}/tests/unit/components.test.tsx` | `BoardToolBar` 새 prop 반영 |
 | `apps/free/tests/unit/useBoardSelection.test.ts` | 신규 |
 | `packages/ui/tests/useSelectionPointer.test.tsx` | 신규 |

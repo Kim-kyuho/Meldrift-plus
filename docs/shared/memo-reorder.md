@@ -1,6 +1,6 @@
 # 메모 순서 변경 상세설계
 
-소스: `packages/board/src/hooks/useMemoReorder.ts`
+소스: `packages/ui/src/features/memo/useMemoReorder.ts`
 
 순서 패널 자체(`packages/ui/src/features/memo/MemoReorderPanel.tsx`)와 순서 계산(`@meldrift/core`의 `reorderMemos`, `sortMemosByOrder`, `memoReorderRowHeight`)도 함께 쓴다. 이 문서는 끌기 상태를 소유한 훅을 다룬다.
 

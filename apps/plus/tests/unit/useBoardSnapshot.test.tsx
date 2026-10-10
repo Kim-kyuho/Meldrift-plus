@@ -1,11 +1,11 @@
 import { act, renderHook, waitFor } from "@testing-library/react";
 import { StrictMode } from "react";
 import { beforeEach, afterEach, describe, expect, it, vi } from "vitest";
-import { createEmptyBoardSnapshot } from "@meldrift/board/board-state";
+import { createEmptyBoardSnapshot } from "@meldrift/board-data/board-state";
 import { useBoardSnapshot } from "@/hooks/useBoardSnapshot";
 
 const mocks = vi.hoisted(() => ({ createDatabase: vi.fn() }));
-vi.mock("@meldrift/board/browser-db/client", () => ({ createBoardDatabase: mocks.createDatabase }));
+vi.mock("@meldrift/board-data/browser-db/client", () => ({ createBoardDatabase: mocks.createDatabase }));
 
 const board = { ...createEmptyBoardSnapshot().board, boardId: 7 };
 const snapshot = { ...createEmptyBoardSnapshot(), board };

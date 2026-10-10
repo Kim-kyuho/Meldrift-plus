@@ -1,10 +1,10 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { SnapshotSync } from "@/lib/snapshot-sync";
-import { createEmptyBoardSnapshot } from "@meldrift/board/board-state";
-import type { BoardDatabaseClient } from "@meldrift/board/browser-db/client";
-import type { StoredBoard } from "@meldrift/board/browser-db/protocol";
+import { createEmptyBoardSnapshot } from "@meldrift/board-data/board-state";
+import type { BoardDatabaseClient } from "@meldrift/board-data/browser-db/client";
+import type { StoredBoard } from "@meldrift/board-data/browser-db/protocol";
 import { act, renderHook } from "@testing-library/react";
-import { useBoardPersistence } from "@meldrift/board/useBoardPersistence";
+import { useBoardPersistence } from "@meldrift/ui/useBoardPersistence";
 
 function setup() {
     let record: StoredBoard = { bytes: new ArrayBuffer(16), sync: { revision: 0, generation: 0, dirty: false, changedAt: 0 } };

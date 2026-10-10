@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { and, eq, inArray } from "drizzle-orm";
-import { maxChangeBytes, maxStagedOperations } from "@meldrift/board/board-delta";
+import { maxChangeBytes, maxStagedOperations } from "@meldrift/board-data/board-delta";
 import { getDb } from "@/lib/db";
 import { db_assets, db_syncMutations } from "@/lib/db/schema";
 import { discardAsset, readAssetBytes, stagedChangeMimeType } from "@/lib/assets";

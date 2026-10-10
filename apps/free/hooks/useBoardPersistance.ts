@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { useBoardPersistence } from "@meldrift/board/useBoardPersistence";
+import { useBoardPersistence } from "@meldrift/ui/useBoardPersistence";
 import type { BoardSnapshot } from "@/lib/board-state";
 import { replaceBoardState } from "@/lib/browser-db/client";
 
