@@ -32,7 +32,7 @@
     "@sqlite.org/sqlite-wasm": "3.50.4-build1",
     "fflate": "^0.8.3",
     "turndown": "^7.2.4",
-    "zod": "^4.3.6"
+    "zod": "^4.6.5"
   },
   "peerDependencies": {
     "react": "^19.3.0",
